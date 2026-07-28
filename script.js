@@ -4,13 +4,9 @@ const pdfViewer = document.getElementById('pdfViewer');
 const pdfContainer = document.getElementById('pdfContainer');
 
 function showPDF(file) {
-    pdfViewer.src = file + '#toolbar=0';
-    pdfContainer.classList.remove('hidden');
-    window.scrollTo({
-        top: pdfContainer.offsetTop,
-        behavior: 'smooth'
-    });
+    pdfViewer.src = "./" + file + "#toolbar=0";
+    pdfContainer.classList.remove("hidden");
 }
 
-level1Btn.addEventListener('click', () => showPDF('level1.pdf'));
-level2Btn.addEventListener('click', () => showPDF('level2.pdf'));
+level1Btn.addEventListener("click", () => showPDF("level1.pdf"));
+level2Btn.addEventListener("click", () => showPDF("level2.pdf"));
