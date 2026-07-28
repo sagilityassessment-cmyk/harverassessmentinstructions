@@ -6,7 +6,10 @@ const pdfContainer = document.getElementById('pdfContainer');
 function showPDF(file) {
     pdfViewer.src = file + '#toolbar=0';
     pdfContainer.classList.remove('hidden');
-    window.scrollTo({ top: pdfContainer.offsetTop, behavior: 'smooth' });
+    window.scrollTo({
+        top: pdfContainer.offsetTop,
+        behavior: 'smooth'
+    });
 }
 
 level1Btn.addEventListener('click', () => showPDF('level1.pdf'));
